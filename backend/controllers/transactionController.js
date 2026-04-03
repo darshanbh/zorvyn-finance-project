@@ -79,15 +79,19 @@ const getOneTransaction = async (req, res) => {
 // Body: { amount, type, category, date, notes? }
 // Accessible to: analyst, admin
 const createTransaction = async (req, res) => {
+  // 🔥 add this
+  if (req.user.role === "viewer") {
+    return res.status(403).json({ message: "Not allowed to create records." });
+  }
+
   const { amount, type, category, date, notes } = req.body;
- 
-  // Manual validation
+
   if (!amount || !type || !category || !date) {
     return res.status(400).json({
-      message: "amount, type, category, and date are all required.",
+      message: "amount, type, category, and date are required.",
     });
   }
- 
+
   try {
     const transaction = await Transaction.create({
       amount,
@@ -95,20 +99,22 @@ const createTransaction = async (req, res) => {
       category,
       date,
       notes,
-      createdBy: req.user._id,  // automatically set to logged-in user
+      createdBy: req.user._id,
     });
- 
+
     res.status(201).json({
       message: "Transaction created successfully",
       transaction,
     });
- 
+
   } catch (error) {
-    // Mongoose validation errors (e.g. invalid category value)
-    res.status(400).json({ message: "Could not create transaction.", error: error.message });
+    res.status(400).json({
+      message: "Could not create transaction.",
+      error: error.message,
+    });
   }
 };
- 
+
 // ── UPDATE TRANSACTION ────────────────────────────────────────────────────────
 // PATCH /api/transactions/:id
 // Body: { amount?, type?, category?, date?, notes? }
