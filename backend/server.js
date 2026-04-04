@@ -33,6 +33,10 @@ app.use((err, req, res, next) => {
   res.status(500).json({ message: "Something went wrong on the server" });
 });
 
+app.get("/", (req, res) => {
+  res.send("Zorvyn Finance Backend System API is running 🚀");
+});
+
 // ── Start Server ──────────────────────────────────────────
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
