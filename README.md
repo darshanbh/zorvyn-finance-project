@@ -1,4 +1,4 @@
-# 💰 Zorvyn Finance Dashboard Backend
+# 💰 Zorvyn Finance Dashboard Backend System
 
 ## 📌 Overview
 
@@ -26,7 +26,7 @@ This project is a backend system for a finance dashboard built as part of an ass
 
 ### 🔐 Authentication (Login & Token)
 
-![Login](./screenshots/login-success-token.png)
+![Login](.backend/screenshots/login-success-token.png)
 
 * JWT-based authentication implemented
 * Secure login with token generation
@@ -35,7 +35,7 @@ This project is a backend system for a finance dashboard built as part of an ass
 
 ### ❌ Validation Example (Login Error)
 
-![Login Error](./screenshots/login-error-missing-password.png)
+![Login Error](.backend/screenshots/login-error-missing-password.png)
 
 * API validates required fields properly
 
@@ -45,7 +45,7 @@ This project is a backend system for a finance dashboard built as part of an ass
 
 #### ✅ Create Transaction (Analyst)
 
-![Create Transaction](./screenshots/create-transaction-success.png)
+![Create Transaction](.backend/screenshots/create-transaction-success.png)
 
 * Create financial transactions securely
 
@@ -53,7 +53,7 @@ This project is a backend system for a finance dashboard built as part of an ass
 
 #### 📥 Get Transactions
 
-![Get Transactions](./screenshots/get-transactions-success.png)
+![Get Transactions](.backend/screenshots/get-transactions-success.png)
 
 * Fetch all transactions with user details
 
@@ -61,7 +61,7 @@ This project is a backend system for a finance dashboard built as part of an ass
 
 #### ✏️ Update Transaction
 
-![Update Transaction](./screenshots/update-transaction-success.png)
+![Update Transaction](.backend/screenshots/update-transaction-success.png)
 
 * Update transaction using unique ID
 
@@ -81,7 +81,7 @@ This project is a backend system for a finance dashboard built as part of an ass
 
 ### ❌ Viewer Restriction (RBAC Proof)
 
-![Viewer Blocked](./screenshots/viewer-create-blocked.png)
+![Viewer Blocked](.backend/screenshots/viewer-create-blocked.png)
 
 * Viewer cannot create transactions
 
@@ -89,7 +89,7 @@ This project is a backend system for a finance dashboard built as part of an ass
 
 ### ❌ Analyst Delete Restriction
 
-![Delete Blocked](./screenshots/delete-transaction-analyst-blocked.png)
+![Delete Blocked](.backend/screenshots/delete-transaction-analyst-blocked.png)
 
 * Only Admin can delete records
 
