@@ -26,7 +26,7 @@ This project is a backend system for a finance dashboard built as part of an ass
 
 ### 🔐 Authentication (Login & Token)
 
-![Login](https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/backend/screenshots/login-success-token.png?raw=true)
+![Login](https://github.com/darshanbh/zorvyn-finance-project/blob/main/backend/screenshots/login-success-token.png?raw=true)
 * JWT-based authentication implemented
 * Secure login with token generation
 
@@ -34,7 +34,7 @@ This project is a backend system for a finance dashboard built as part of an ass
 
 ### ❌ Validation Example (Login Error)
 
-![Login Error](https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/backend/screenshots/login-error-missing-password.png?raw=true)
+![Login Error](https://github.com/darshanbh/zorvyn-finance-project/blob/main/backend/screenshots/login-error-missing-password.png?raw=true)
 
 * API validates required fields properly
 
@@ -44,7 +44,7 @@ This project is a backend system for a finance dashboard built as part of an ass
 
 #### ✅ Create Transaction (Analyst)
 
-![Create Transaction](.backend/screenshots/create-transaction-success.png)
+![Create Transaction](https://github.com/darshanbh/zorvyn-finance-project/blob/main/backend/screenshots/create-transaction-success.png)
 
 * Create financial transactions securely
 
@@ -52,7 +52,7 @@ This project is a backend system for a finance dashboard built as part of an ass
 
 #### 📥 Get Transactions
 
-![Get Transactions](.backend/screenshots/get-transactions-success.png)
+![Get Transactions](https://github.com/darshanbh/zorvyn-finance-project/blob/main/backend/screenshots/get-transactions-success.png)
 
 * Fetch all transactions with user details
 
@@ -60,7 +60,7 @@ This project is a backend system for a finance dashboard built as part of an ass
 
 #### ✏️ Update Transaction
 
-![Update Transaction](.backend/screenshots/update-transaction-success.png)
+![Update Transaction](https://github.com/darshanbh/zorvyn-finance-project/blob/main/backend/screenshots/update-transaction-success.png)
 
 * Update transaction using unique ID
 
@@ -80,7 +80,7 @@ This project is a backend system for a finance dashboard built as part of an ass
 
 ### ❌ Viewer Restriction (RBAC Proof)
 
-![Viewer Blocked](.backend/screenshots/viewer-create-blocked.png)
+![Viewer Blocked](https://github.com/darshanbh/zorvyn-finance-project/blob/main/backend/screenshots/viewer-create-blocked.png)
 
 * Viewer cannot create transactions
 
@@ -88,7 +88,7 @@ This project is a backend system for a finance dashboard built as part of an ass
 
 ### ❌ Analyst Delete Restriction
 
-![Delete Blocked](.backend/screenshots/delete-transaction-analyst-blocked.png)
+![Delete Blocked](https://github.com/darshanbh/zorvyn-finance-project/blob/main/backend/screenshots/delete-transaction-analyst-blocked.png)
 
 * Only Admin can delete records
 
