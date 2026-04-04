@@ -26,8 +26,7 @@ This project is a backend system for a finance dashboard built as part of an ass
 
 ### 🔐 Authentication (Login & Token)
 
-![Login](.backend/screenshots/login-success-token.png)
-
+![Login](https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/backend/screenshots/login-success-token.png?raw=true)
 * JWT-based authentication implemented
 * Secure login with token generation
 
@@ -35,7 +34,7 @@ This project is a backend system for a finance dashboard built as part of an ass
 
 ### ❌ Validation Example (Login Error)
 
-![Login Error](.backend/screenshots/login-error-missing-password.png)
+![Login Error](https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/backend/screenshots/login-error-missing-password.png?raw=true)
 
 * API validates required fields properly
 
