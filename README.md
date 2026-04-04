@@ -23,6 +23,44 @@ This project is a backend system for a finance dashboard built as part of an ass
 * Role-based permissions enforced
 
 ---
+## 🧪 API Testing (Postman)
+
+All APIs were tested using **Postman** to ensure correct functionality, validation, and security.
+
+### 🔹 What was tested:
+
+* User Registration & Login (JWT Authentication)
+* Token-based authorization using headers
+* Role-Based Access Control (Viewer, Analyst, Admin)
+* Transaction CRUD operations (Create, Read, Update, Delete)
+* Filtering & Pagination using query parameters
+* Error handling and validation responses
+
+### 🔹 Authorization Method:
+
+All protected routes require JWT token in headers:
+
+```
+Authorization: Bearer <your_token>
+```
+
+### 🔹 Example Workflow:
+
+1. Register a user (Analyst/Admin)
+2. Login and receive JWT token
+3. Use token in Authorization header
+4. Perform CRUD operations on transactions
+5. Validate role-based restrictions (Viewer blocked, Analyst limited, Admin full access)
+
+### 🔹 Key Highlights:
+
+* Unauthorized access is blocked
+* Role restrictions enforced correctly
+* API responses validated with proper status codes
+* Tested multiple edge cases using Postman
+
+
+---
 
 ### 🔐 Authentication (Login & Token)
 
