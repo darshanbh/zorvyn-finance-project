@@ -1,7 +1,8 @@
-// src/utils/api.js
 import axios from 'axios'
 
-const api = axios.create({ baseURL: '/api' })
+const api = axios.create({
+  baseURL: 'https://zorvyn-finance-project.onrender.com/'
+})
 
 // Auto-attach token to every request
 api.interceptors.request.use((config) => {
