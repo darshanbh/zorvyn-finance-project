@@ -1,5 +1,9 @@
 # 💰 Finance Dashboard Backend System
 
+## 🚀 Live Demo
+
+**[https://finance-backend-system.netlify.app/](https://finance-backend-system.netlify.app/)**
+
 ## 📌 Overview
 
 This project is a backend system for a finance dashboard built as part of an assessment to demonstrate API design, data handling, and role-based access control.
