@@ -14,8 +14,14 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: 'https://finance-backend-system.netlify.app/'
-}))
+  origin: [
+    'http://localhost:3000',
+    'http://localhost:5173',
+    'https://finance-backend-system.netlify.app' // ✅ NO trailing slash
+  ],
+  credentials: true
+}));
+
 app.use(express.json());
 
 // Routes
