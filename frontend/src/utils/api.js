@@ -4,8 +4,9 @@ import axios from 'axios'
 //   baseURL: 'https://zorvyn-finance-project.onrender.com/'
 // })
 
-const api= axios.create({ baseURL: 'https://zorvyn-finance-project.onrender.com/api' });
-
+const api = axios.create({
+  baseURL: 'http://localhost:5000/api'
+});
 
 // Auto-attach token to every request
 api.interceptors.request.use((config) => {
